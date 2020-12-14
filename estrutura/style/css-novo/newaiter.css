@@ -1,0 +1,345 @@
+select[readonly] {
+  background: #eee; /*Simular campo inativo - Sugestão @GabrielRodrigues*/
+  pointer-events: none;
+  touch-action: none;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  color: #fff;
+  background-color: green;
+}
+
+/* TOOLTIP TOP*/
+
+.c-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.c-tooltip .c-tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: black;
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px;
+  
+  /* Position the c-tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.c-tooltip:hover .c-tooltiptext {
+  visibility: visible;
+}
+
+
+* MODAL */
+
+.c-modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1050;
+	display: none;
+	overflow: auto;
+	outline: 0;
+	background: rgba(0, 0, 0, 0.5);
+}
+.c-modal-dialog,.c-modal-sm,.c-modal-lg, .c-modal-50, .c-modal-65, .c-modal-95,.c-modal-100{
+	width:auto;
+	margin:30px auto
+}
+.c-modal-content {
+	position: relative;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #999;
+	border: 1px solid rgba(0, 0, 0, .2);
+	border-radius: 6px;
+	outline: 0;
+	box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+}
+.c-modal-header {
+	padding: 15px;
+	background-color: #ededed;
+	border-bottom: 1px solid #e5e5e5;
+	border-radius: 6px 6px 0px 0px;
+}
+.c-modal-title {
+	font-size: 24px;
+	margin: 0;
+	line-height: 1.42857143;
+}
+.c-modal-body {
+	position: relative;
+	padding: 5px 10px 10px 10px;
+	background-color: white;
+	border-radius: 0px 0px 6px 6px;
+}
+.c-modal-footer {
+	padding: 15px;
+	text-align: right;
+	border-top: 1px solid #e5e5e5;
+}
+.c-btn-close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 20px;
+	font-weight: bold;
+}
+@media (min-width: 750px) {
+	.c-modal-dialog {
+		width: 600px;
+		margin: 30px auto;
+	}
+	.c-modal-sm {
+		width: 300px;
+	}
+}
+@media (min-width: 1000px) {
+	.c-modal-lg {
+		width: 900px;
+	}
+}
+
+.c-modal-50 {
+	width: 50%;
+}
+
+.c-modal-65 {
+	width: 65%;
+}
+
+@media (max-width: 500px) {
+   .c-modal-50 {
+		width: 100%;
+	}
+	.c-modal-65 {
+		width: 100%;
+	}
+}
+
+
+.c-modal-95 {
+	width: 95%;
+}
+.c-modal-100 {
+	width: 100%;
+}	
+
+* MODAL */
+
+.c-modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1050;
+	display: none;
+	overflow: auto;
+	outline: 0;
+	background: rgba(0, 0, 0, 0.5);
+}
+.c-modal-dialog,.c-modal-sm,.c-modal-lg, .c-modal-50, .c-modal-65, .c-modal-95,.c-modal-100{
+	width:auto;
+	margin:30px auto
+}
+.c-modal-content {
+	position: relative;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #999;
+	border: 1px solid rgba(0, 0, 0, .2);
+	border-radius: 6px;
+	outline: 0;
+	box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+}
+.c-modal-header {
+	padding: 15px;
+	background-color: #ededed;
+	border-bottom: 1px solid #e5e5e5;
+	border-radius: 6px 6px 0px 0px;
+}
+.c-modal-title {
+	font-size: 24px;
+	margin: 0;
+	line-height: 1.42857143;
+}
+.c-modal-body {
+	position: relative;
+	padding: 5px 10px 10px 10px;
+	background-color: white;
+	border-radius: 0px 0px 6px 6px;
+}
+.c-modal-footer {
+	padding: 15px;
+	text-align: right;
+	border-top: 1px solid #e5e5e5;
+}
+.c-btn-close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+@media (min-width: 750px) {
+	.c-modal-dialog {
+		width: 600px;
+		margin: 30px auto;
+	}
+	.c-modal-sm {
+		width: 300px;
+	}
+}
+@media (min-width: 1000px) {
+	.c-modal-lg {
+		width: 900px;
+	}
+}
+
+.c-modal-50 {
+	width: 50%;
+}
+
+.c-modal-65 {
+	width: 65%;
+}
+
+@media (max-width: 500px) {
+   .c-modal-50 {
+		width: 100%;
+	}
+	.c-modal-65 {
+		width: 100%;
+	}
+}
+
+
+.c-modal-95 {
+	width: 95%;
+}
+.c-modal-100 {
+	width: 100%;
+}			
+
+
+body {
+  overflow: hidden; 
+}
+
+#preloader {
+
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	width: 100%;
+	height: 100%;
+	/* background-color: #B8D0E9; */
+	background: url('http://i.imgur.com/zAD2y29.gif') 50% 50% no-repeat white;	
+	z-index:999;
+
+}
+
+/* TEXT COLOR */
+
+.c-blue {
+	color: #337AB7;
+}
+
+.c-white {
+	color: white;
+}
+
+.c-red {
+	color: red;
+}
+
+.c-green {
+	color: green;
+}
+
+.c-gray {
+	color: #676768;
+}
+
+
+/* TEXT DECORATION */
+
+.c-und {
+	text-decoration: underline;
+}
+
+.c-lt {
+	text-decoration: line-through;	
+}
+
+.c-b {
+	font-weight: bold;	
+}
+
+/* TEXT ALIGN */
+
+.c-center, .center {
+	text-align: center;
+}
+
+.c-left {
+	text-align: left;
+}
+
+.c-justify {	
+	text-align: justify;
+}
+
+/* TEXT SIZE */
+
+.c-font-lg {	
+	font-size: 20px;
+	font-weight: normal;
+}
+
+/* OK, ERROR */
+
+.c-ok, .c-error {
+	font-size: 30px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.c-ok {
+	color: green;
+}
+
+.c-error {
+	color: red; 
+}
+
+/* TABLE */
+
+table.sortable th::after, th.sorttable_sorted::after, th.sorttable_sorted_reverse::after {
+}
+th.sorttable_sorted::after {
+}
+th.sorttable_sorted_reverse::after {
+}

@@ -1,0 +1,96 @@
+/* MODAL */
+
+.c-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: auto;
+    outline: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.c-modal-dialog,.c-modal-sm,.c-modal-lg, .c-modal-50, .c-modal-65, .c-modal-95,.c-modal-100{
+    width:auto;
+    margin:30px auto
+}
+.c-modal-content {
+    position: relative;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    outline: 0;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+}
+.c-modal-header {
+    padding: 15px;
+    background-color: #ededed;
+    border-bottom: 1px solid #e5e5e5;
+    border-radius: 6px 6px 0px 0px;
+}
+.c-modal-title {
+    font-size: 24px;
+    margin: 0;
+    line-height: 1.42857143;
+}
+.c-modal-body {
+    position: relative;
+    padding: 5px 10px 10px 10px;
+    background-color: white;
+    border-radius: 0px 0px 6px 6px;
+}
+.c-modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+}
+.c-btn-close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+@media (min-width: 750px) {
+    .c-modal-dialog {
+        width: 600px;
+        margin: 30px auto;
+    }
+    .c-modal-sm {
+        width: 300px;
+    }
+}
+@media (min-width: 1000px) {
+    .c-modal-lg {
+        width: 900px;
+    }
+}
+
+.c-modal-50 {
+    width: 50%;
+}
+
+.c-modal-65 {
+    width: 65%;
+}
+
+@media (max-width: 500px) {
+   .c-modal-50 {
+		width: 100%;
+	}
+	.c-modal-65 {
+		width: 100%;
+	}
+}
+
+
+.c-modal-95 {
+    width: 95%;
+}
+.c-modal-100 {
+    width: 100%;
+}
+}
